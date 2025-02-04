@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useCallback, useState } from "react";
+import { ChangeEvent, useCallback, useState } from "react";
 import debounce from "lodash.debounce";
 const mockApi = [
   "john",
