@@ -12,10 +12,10 @@ const mockApi = [
 ];
 const getSearchResult = async (searchTerm: string) => {
   console.log("api request");
-  await new Promise((resolv) => setTimeout(resolv, 1000));
+  await new Promise((resolv) => setTimeout(resolv, 500));
 
   return mockApi.filter((result) =>
-    result.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())
+    result.toLocaleLowerCase().startsWith(searchTerm.toLocaleLowerCase())
   );
 };
 const Search = () => {
