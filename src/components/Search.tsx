@@ -1,15 +1,6 @@
 import { ChangeEvent, useCallback, useState } from "react";
 import debounce from "lodash.debounce";
-const mockApi = [
-  "john",
-  "jos",
-  "jane",
-  "janet",
-  "james",
-  "joshua",
-  "Jenet",
-  "jenifa",
-];
+const mockApi = ["john", "Doe", "funebi", "chuks", "james", "joshua", "rema"];
 const getSearchResult = async (searchTerm: string) => {
   console.log("api request");
   await new Promise((resolv) => setTimeout(resolv, 500));
